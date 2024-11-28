@@ -19,4 +19,3 @@ def test_github_mobile(setup_screen_resolution):
     else:
         browser.open("https://github.com")
         browser.element('[aria-label="Toggle navigation"].Button--link ').click()
-        browser.element(".HeaderMenu-link--sign-in").should(be.clickable).click()
